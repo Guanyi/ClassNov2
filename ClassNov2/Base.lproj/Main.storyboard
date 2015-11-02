@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ClassNov2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,46 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://" borderStyle="roundedRect" placeholder="Enter Web Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wCo-SS-Pkg">
+                                <rect key="frame" x="70" y="20" width="460" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhQ-oX-bw2">
+                                <rect key="frame" x="555" y="20" width="30" height="30"/>
+                                <state key="normal" title="GO"/>
+                                <connections>
+                                    <action selector="goButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DAF-8T-TuH"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y0b-kF-Tu8">
+                                <rect key="frame" x="20" y="50" width="560" height="550"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PhQ-oX-bw2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="55c-ZC-cjG"/>
+                            <constraint firstItem="y0b-kF-Tu8" firstAttribute="top" secondItem="PhQ-oX-bw2" secondAttribute="bottom" id="8el-3Q-0GO"/>
+                            <constraint firstItem="wCo-SS-Pkg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="G8K-8x-Xux"/>
+                            <constraint firstItem="wCo-SS-Pkg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="HMP-FY-5np"/>
+                            <constraint firstItem="y0b-kF-Tu8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="IoV-6m-seK"/>
+                            <constraint firstItem="wCo-SS-Pkg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XH2-oO-bBY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y0b-kF-Tu8" secondAttribute="bottom" id="lvR-Rw-4Vn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="y0b-kF-Tu8" secondAttribute="trailing" id="p4r-wf-EAD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wCo-SS-Pkg" secondAttribute="trailing" constant="50" id="qeS-mx-fPq"/>
+                            <constraint firstItem="PhQ-oX-bw2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="5" id="tqp-nv-d8X"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="urlTextField" destination="wCo-SS-Pkg" id="q99-oL-Mqv"/>
+                        <outlet property="webView" destination="y0b-kF-Tu8" id="erz-sc-9AQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="801" y="635"/>
         </scene>
     </scenes>
 </document>
