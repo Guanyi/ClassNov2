@@ -16,6 +16,7 @@
 		7E3834A01BE80E2700428C7C /* ClassNov2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E38349F1BE80E2700428C7C /* ClassNov2Tests.swift */; };
 		7E3834AB1BE80E2700428C7C /* ClassNov2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3834AA1BE80E2700428C7C /* ClassNov2UITests.swift */; };
 		7E3834B91BE814DB00428C7C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3834B81BE814DB00428C7C /* WebKit.framework */; };
+		939665D91BF01C4B00D0EAFB /* MyTest.html in Resources */ = {isa = PBXBuildFile; fileRef = 939665D81BF01C4B00D0EAFB /* MyTest.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7E3834AA1BE80E2700428C7C /* ClassNov2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassNov2UITests.swift; sourceTree = "<group>"; };
 		7E3834AC1BE80E2700428C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E3834B81BE814DB00428C7C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		939665D81BF01C4B00D0EAFB /* MyTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MyTest.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				7E3834931BE80E2700428C7C /* LaunchScreen.storyboard */,
 				7E3834961BE80E2700428C7C /* Info.plist */,
 				7E38348E1BE80E2700428C7C /* ClassNov2.xcdatamodeld */,
+				939665D81BF01C4B00D0EAFB /* MyTest.html */,
 			);
 			path = ClassNov2;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				939665D91BF01C4B00D0EAFB /* MyTest.html in Resources */,
 				7E3834951BE80E2700428C7C /* LaunchScreen.storyboard in Resources */,
 				7E3834921BE80E2700428C7C /* Assets.xcassets in Resources */,
 				7E38348D1BE80E2700428C7C /* Main.storyboard in Resources */,
@@ -495,6 +499,7 @@
 				7E3834B11BE80E2700428C7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E3834B21BE80E2700428C7C /* Build configuration list for PBXNativeTarget "ClassNov2Tests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +508,7 @@
 				7E3834B41BE80E2700428C7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E3834B51BE80E2700428C7C /* Build configuration list for PBXNativeTarget "ClassNov2UITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +517,7 @@
 				7E3834B71BE80E2700428C7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
